@@ -1,0 +1,76 @@
+@media (min-width: 992px) {
+    .navbar-collapse {
+        margin-top: -25px;
+        flex-direction: row-reverse!important;
+    }
+}
+:root{
+    --main-bg-color: white;
+    --main-txt-color: black;
+}
+.navbar{
+    background-color:#000000!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--main-bg-color);
+    letter-spacing: 0.15em;
+}
+
+
+.jumbotron {
+    background-position: center center;
+    background-size:contain;
+    border-radius: 0;
+    background:url(./image/logo/profile_icon.jpg) center ;
+    display: block;
+    padding-top: 30%;
+}
+
+
+.container{
+    font-family: 'Kosugi', sans-serif;
+}
+.title-text{
+    z-index: 15;
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 35px;
+    text-indent: 0.15em;
+    color: var(--main-txt-color);
+    font-size: 30px;
+}
+.text{
+    z-index: 15;
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+    text-indent: 0.15em;
+    color: var(--main-txt-color);
+    font-size: 20px;
+}
+
+.box{
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 5px #42210B;
+    border-bottom: solid 5px #42210B;
+}
+.box:before, .box:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 5px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: #42210B;
+}
+.box:before {left: 10px;}
+.box:after {right: 10px;}
+.box p {
+    margin: 0;
+    padding: 0;
+}
